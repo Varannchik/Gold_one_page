@@ -40,6 +40,13 @@ h4 {
   font-family: 'PT Serif', serif;
   text-align: center;
 }
+h5 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  margin: 25px 0 10px 0;
+  font-weight: bold;
+}
 button {
   color: white;
   background: #fed136;
@@ -62,11 +69,16 @@ button {
   background-size: cover;
   /* Современные браузеры */
 }
-.main_items {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 700px;
+}
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 nav {
   display: flex;
@@ -102,14 +114,13 @@ nav ul li a {
   text-align: center;
 }
 /*end first screen style*/
-.main_content {
-  padding: 120px 0 90px 0;
-  width: 940px;
-}
-.content_items {
+section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+section .container {
+  padding: 120px 20px 90px 20px;
 }
 /*second screen style*/
 .card_block {
@@ -139,13 +150,6 @@ nav ul li a {
   width: 74px;
   height: 73px;
 }
-.name_card {
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  margin: 25px 0 10px 0;
-  font-weight: bold;
-}
 /*end second screen style*/
 /*third screen style*/
 .description_img {
@@ -170,17 +174,11 @@ nav ul li a {
 }
 .gorizontal_card {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 570px;
   margin-bottom: 93px;
   padding: 0 36px;
 }
 .gorizontal_card:nth-child(2n) {
-  align-self: flex-end;
-}
-.gorizontal_card:nth-child(2n+1) .round_img {
-  order: 2;
+  flex-direction: row-reverse;
 }
 .gorizontal_card:nth-child(2n+1) .gorizontal_card_text {
   align-items: flex-end;
@@ -191,12 +189,13 @@ nav ul li a {
 .gorizontal_card_text {
   display: flex;
   flex-direction: column;
+  flex: 2   1   200px;
 }
-.gorizontal_card_text .name_card {
-  margin: 0px;
+.gorizontal_card_text h5 {
+  margin: 0;
   padding-bottom: 5px;
 }
-.gorizontal_card_text .name_card:first-child {
+.gorizontal_card_text h5:first-child {
   text-transform: uppercase;
 }
 .gorizontal_card_text p {
@@ -205,15 +204,22 @@ nav ul li a {
   line-height: 21px;
 }
 .round_img {
+  display: flex;
   min-width: 162px;
   max-height: 162px;
   border-radius: 95px;
   border: 10px solid #f1f1f1;
   overflow: hidden;
   margin: 0 45px;
+  flex: 1   1   100px;
 }
 .round_img img {
   height: 100%;
+}
+.empty {
+  display: flex;
+  content: ' ';
+  flex: 2   1   200px;
 }
 .round_btn {
   width: 162px;

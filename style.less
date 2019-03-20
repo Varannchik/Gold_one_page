@@ -56,6 +56,13 @@ h4{
   font-family: @fontDroid;
   text-align: center;
 }
+h5{
+  font-size: 18px;
+  font-family: @fontMon;
+  color: black;
+  margin: 25px 0 10px 0;
+  font-weight: bold;
+}
 
 button{
   color: white;
@@ -81,14 +88,18 @@ button{
    background: url("img/background.jpg") no-repeat;
    background-size: cover; /* Современные браузеры */
  }
-.main_items{
+header{
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 700px;
 }
 
-
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 nav{
   display: flex;
   flex-direction: row;
@@ -128,19 +139,14 @@ nav{
 /*end first screen style*/
 
 
-.main_content{
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: space-around;
-  //align-items: center;
-  padding: 120px 0 90px 0;
-  width: 940px;
-}
-.content_items{
+
+section{
   display: flex;
-  //flex-direction: column;
   align-items: center;
   justify-content: center;
+  .container{
+    padding: 120px 20px 90px 20px;
+  }
 }
 
 
@@ -173,13 +179,7 @@ nav{
   width: 74px;
   height: 73px;
 }
-.name_card{
-  font-size: 18px;
-  font-family: @fontMon;
-  color: black;
-  margin: 25px 0 10px 0;
-  font-weight: bold;
-}
+
 /*end second screen style*/
 
 
@@ -218,24 +218,18 @@ nav{
 }
 .gorizontal_card{
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 570px;
   margin-bottom: 93px;
   padding: 0 36px;
   &:nth-child(2n){
 
-    align-self: flex-end;
+    flex-direction: row-reverse;
   }
   &:nth-child(2n+1){
 
-    .round_img{
-      order: 2;
 
-    }
     .gorizontal_card_text{
-      align-items: flex-end;
-    }
+       align-items: flex-end;
+     }
     p{
       text-align: right;
     }
@@ -245,8 +239,9 @@ nav{
 .gorizontal_card_text{
   display: flex;
   flex-direction: column;
-  .name_card{
-    margin: 0px;
+  flex:   2   1   200px;
+  h5{
+    margin: 0;
     padding-bottom: 5px;
     &:first-child{
       text-transform: uppercase;
@@ -259,15 +254,22 @@ nav{
   }
 }
 .round_img{
+  display: flex;
   min-width: 162px;
   max-height: 162px;
   border-radius: 95px;
   border: 10px solid @border_gray;
   overflow: hidden;
   margin: 0 45px;
+  flex:   1   1   100px;
   img{
     height: 100%;
   }
+}
+.empty{
+  display: flex;
+  content: ' ';
+  flex:   2   1   200px;
 }
 
 .round_btn{
