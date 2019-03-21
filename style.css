@@ -47,6 +47,13 @@ h5 {
   margin: 25px 0 10px 0;
   font-weight: bold;
 }
+h6 {
+  font-size: 16px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 3px;
+}
 button {
   color: white;
   background: #fed136;
@@ -58,7 +65,8 @@ button {
   outline: none;
   line-height: 65px;
   padding: 0 47px;
-  border-radius: 2px;
+  border-radius: 3px;
+  margin: 0 auto;
 }
 .colour_bg {
   background-color: #f7f7f7;
@@ -74,6 +82,12 @@ header {
   flex-direction: column;
   align-items: center;
   height: 700px;
+}
+.center {
+  text-align: center;
+  color: #777777;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
 }
 .container {
   max-width: 940px;
@@ -114,11 +128,6 @@ nav ul li a {
   text-align: center;
 }
 /*end first screen style*/
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 section .container {
   padding: 120px 20px 90px 20px;
 }
@@ -238,3 +247,131 @@ section .container {
   cursor: pointer;
 }
 /*end fourth screen style*/
+.team {
+  background: transparent;
+}
+.team p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.frame_photo {
+  display: flex;
+  justify-content: center;
+  max-width: 220px;
+  max-height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0 23px 0;
+}
+.frame_photo img {
+  height: 100%;
+}
+.logo_set img {
+  display: inline-block;
+}
+.logo_set .container {
+  padding: 60px 20px;
+}
+.logo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  display: flex;
+  flex: 2   1   200px;
+  color: #555555;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+footer .social_icons {
+  display: flex;
+  flex: 1   1   100px;
+}
+footer .empty {
+  display: flex;
+  content: ' ';
+  flex: 2   1   200px;
+}
+footer a {
+  display: inline-block;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 0;
+}
+.icon {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  margin: 0 5px;
+}
+.twitter {
+  background-image: url("img/twitter.png");
+}
+.twitter:hover {
+  background-image: url("img/twitter_hover.png");
+}
+.facebook {
+  background-image: url("img/facebok.png");
+}
+.facebook:hover {
+  background-image: url("img/facebok_hover.png");
+}
+.pinterest {
+  background-image: url("img/pinterest.png");
+}
+.pinterest:hover {
+  background-image: url("img/pinteres_hover.png");
+}
+.google {
+  background-image: url("img/google.png");
+}
+.google:hover {
+  background-image: url("img/google_hover.png");
+}
+.form_bg {
+  background: url("img/bg_form.jpg") no-repeat;
+  background-size: cover;
+  /* Современные браузеры */
+}
+.form_bg h3 {
+  color: white;
+}
+form {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form_wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 210px;
+  margin-bottom: 30px;
+}
+.form_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+.form_items input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 10px;
+}
+textarea {
+  flex-grow: 1;
+  border-radius: 3px;
+}
