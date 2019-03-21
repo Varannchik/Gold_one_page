@@ -366,12 +366,29 @@ form {
   height: 50px;
   border-radius: 3px;
   font-size: 14px;
-  color: #bbbbbb;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.form_items input[type="text"]::-webkit-input-placeholder {
+  color: #bbb;
+}
+.form_items input[type="text"]::-moz-placeholder {
+  color: #bbb;
 }
 textarea {
   flex-grow: 1;
   border-radius: 3px;
+  padding: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+textarea::-webkit-input-placeholder {
+  color: #bbb;
+}
+textarea::-moz-placeholder {
+  color: #bbb;
 }
