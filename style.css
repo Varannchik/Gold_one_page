@@ -259,6 +259,7 @@ section .container {
 .frame_photo {
   display: flex;
   justify-content: center;
+  align-items: center;
   max-width: 220px;
   max-height: 220px;
   border-radius: 50%;
